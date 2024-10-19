@@ -8,7 +8,7 @@ const _totalQuestion = document.getElementById('total-question');
 let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 // load question from API
 async function loadQuestion(){
-    const APIUrl = 'https://opentdb.com/api.php?amount=50';
+    const APIUrl = 'https://opentdb.com/api.php?amount=10';
     const result = await fetch(`${APIUrl}`)
     const data = await result.json();
     _result.innerHTML = "";
